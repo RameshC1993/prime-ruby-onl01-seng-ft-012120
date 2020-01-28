@@ -1,7 +1,13 @@
 def prime(num)
-  i = 0 
-  while i < num.length do 
-    
+  if num == 1 
+    return false
+  end
+  i = 2 
+  while i < num do 
+    if i % num == 0 
+      return false
+    end
     i += 1 
   end
+  return true
 end
